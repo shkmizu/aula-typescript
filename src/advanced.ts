@@ -6,10 +6,10 @@ interface Carro {
   motor?: string;
 }
 const meuCarro: Carro = {
-  marca: "Toyota",
-  modelo: "Corolla",
+  marca: "BMW",
+  modelo: "M5 Competition",
   ano: 2025,
-  motor: "2.0"
+  motor: "4.4 V8"
 };
 console.log(meuCarro);
 
@@ -63,7 +63,6 @@ class UsuarioRepositorio implements Repositorio<Usuario> {
 const repo = new UsuarioRepositorio();
 repo.salvar({ nome: "Vitor", email: "vitor@email.com" });
 repo.salvar({ nome: "Type", email: "type@email.com" });
-
 console.log(repo.obterTodos());
 
 
@@ -101,10 +100,10 @@ interface Trabalhador {
 }
 type EstudanteTrabalhador = Estudante & Trabalhador;
 const pessoa: EstudanteTrabalhador = {
-  nome: "Carlos",
+  nome: "Vitor",
   curso: "Engenharia de Software",
-  empresa: "TechCorp",
-  cargo: "Desenvolvedor Júnior"
+  empresa: "FIAP",
+  cargo: "Desenvolvedor Web Júnior"
 };
 
 console.log(pessoa);
